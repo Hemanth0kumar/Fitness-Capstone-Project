@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat" sans-serif;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      #pricing {
+        margin: auto;
+        width: 120rem;
+      }
+
+      .pricing-container {
+        margin: auto;
+        width: 90rem;
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .pricing-heading {
+        font-size: 4rem;
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin: 2rem;
+        /* align-self: center; */
+        background: linear-gradient(to right, #919bff, #133a94);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+
+      .plan-container {
+        /* background-color: skyblue; */
+        border-radius: 2rem;
+        width: 30rem;
+        /* height: 60rem; */
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .lite-plan {
+        background-image: linear-gradient(150deg, #f492f0, #a18dce);
+      }
+
+      .lite-plan:hover {
+        transform: scale(1.1);
+      }
+
+      .premium-plan {
+        background-image: linear-gradient(150deg, #ffd78a, #f4762d);
+      }
+
+      .lite-plan-image,
+      .premium-plan-image {
+        border-radius: 1rem;
+        width: 100%;
+        background-color: aliceblue;
+      }
+
+      svg,
+      image {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .lite-plan-pricing,
+      .premium-plan-pricing {
+        font-size: 4rem;
+        color: aliceblue;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .features-container {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .features-container li {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .features-container li img {
+        width: 1.8rem;
+      }
+
+      .features-container li p {
+        font-size: 1.6rem;
+        color: aliceblue;
+      }
+
+      .btn-subscribe {
+        border: none;
+        padding: 0.5rem;
+        border-radius: 5rem;
+        font-size: 1.6rem;
+        background-color: aliceblue;
+        color: #210cae;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="pricing">
+      <div class="pricing-container">
+        <h2 class="pricing-heading">Pricing</h2>
+        <div class="lite-plan plan-container">
+          <img class="lite-plan-image" src="./fitness-lite-image.png" />
+          <div class="lite-plan-pricing">
+            <svg>
+              <image href="./dollar.svg" />
+            </svg>
+            <span
+              ><strong
+                >500/<span style="font-size: 2rem">Mon</span></strong
+              ></span
+            >
+          </div>
+          <div class="liteplan-features">
+            <ul class="features-container">
+              <li>
+                <img src="./point-style.svg" />
+                <p>Gym Access</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Personalized Workout Plans</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>1-on-1 Coaching</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Exercise Video Library</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Nutritional Guidance</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Progress Tracking</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Community Support</p>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+        <div class="premium-plan plan-container">
+          <img class="premium-plan-image" src="./fitness-premium-image.png" />
+          <div class="premium-plan-pricing">
+            <svg>
+              <image href="./dollar.svg" />
+            </svg>
+            <span
+              ><strong
+                >900/<span style="font-size: 2rem">Mon</span></strong
+              ></span
+            >
+          </div>
+          <div class="premium-features">
+            <ul class="features-container">
+              <li>
+                <img src="./point-style.svg" />
+                <p>All lite features</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Priority Scheduling</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Advanced Analytics</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Meal Planning</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Additional Resources</p>
+              </li>
+              <li>
+                <img src="./point-style.svg" />
+                <p>Exclusive Access</p>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
